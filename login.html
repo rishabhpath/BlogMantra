@@ -1,116 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog-Mantra | Log-in</title>
     <style>
-        body{
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    height: auto;
-    background-color: rgb(224, 224, 235);
-}
-.logo{
-    text-align: center;
-    font-size: 20px;
-    margin-top: 130px;
-    font-family:monospace;
-    color: rgb(42, 98, 172);
-    
-    
-}
-.center{
-    position:sticky;
-    text-align: center;
-    background: white;
-    left: 50%;
-    top:50%;
-    transform: translate(-50%, 0%);
-    width: 400px;
-    border-radius: 10px;
-    
-    
-}
-.center h3{
-    font-family:cursive;
-    padding-top: 10px;
-    border-bottom: 1px solid silver;
-    padding-bottom: 10px;
 
-}
+        #top
+        {
+        height:100px ;
+        background-color: #3c5a99; 
+        color: #d9dfeb; 
+        padding-left: 4px;
+        }
+        #signup
+        
+        {
+            width: 70px;
+            text-align: center;
+            padding: 4px;
+            background-color: #42b72a;
+            border-radius: 5px;
+            float: right;
+           
+        }
 
-.pass input{
-    width: 75%;
-    height: 28px;
-    margin: 7px;
-}
-#submit{
-    margin-top: 8px;
-    width: 77%;
-    height: 33px;
-    background: rgb(42, 98, 172);
-    color: white;
-    font-size: 19px;
-    font-family:monospace;
-    border-radius: 5px;
-
-}
-.forgot{
-    margin-top: 8px;
-}
-.forgot a{
-    text-decoration: none;
-   color: black;
-   margin: 5px;
-}
-.signup{
-    margin: 3px;
-}
-.signup a{
-    text-decoration:none;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(37, 88, 155);
-    font-style:inherit;
-
-}
-#submit:hover{
-    font-size: 21px;
-}
-.space p{
-    color:white;
-    margin-top: 1px;
-    text-align: end;
-}
+        .center
+        {
+            background-color: white;
+            width: 420px;
+            
+            margin: auto;
+            margin-top: 50px;
+            text-align: center;
+        }
+        #text
+        {
+            height: 40px;
+            width: 300px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            border: solid 1px #ccc;
+            
+        }
+        #button
+        {
+            width: 300px;
+            height: 40px;
+            border:none ;
+            font-weight: bold;
+            border-radius: 4px;
+            background-color: #3c5a99;
+            
+            color: white;
+        }
     </style>
 </head>
-<body>
-    <div class="logo">
-        <h1>Blog-Mantra</h1>
+
+
+
+<body style="background-color: #e9ebee;">
+    <div id="top">
+        <div style="font-size: 40px;">Blog-Mantra</div>
+        <div id="signup">Signup</div>
     </div>
+
+
+    <!-- login form -->
     <div class="center">
-        <div id="loginname">
-            <h3>Log in Blog-Mantra</h3>
+        <div id="loginname" style="padding: 20px;">
+            <h3>Log in to Blog-Mantra</h3>
         </div>
         <form action="#" method="post">
+            
             <div class="pass">
-                <input type="text" value="" placeholder="Email address or Phone number">   
+                <input id="text" type="text" value="" placeholder="Email address or Phone number">   
             </div>
+            
             <div class="pass">
-                <input type="password" value="" placeholder="Password">
+                <input id="text" type="password" value="" placeholder="Password">
             </div>
-            <input type="submit" value="Log In" id="submit">
-            <div class="forgot">
-                <a href="#">Forgot Password</a>
-            </div>
-            <div class="signup">
-                Not a member? <a href="signup.html">Sign up</a>
-            </div>
-            <div class="space">
-                <p>R</p>
-            </div>
+            
+            <input type="submit" value="Log In" id="button">
+            <br><br><br><br>
+           
+
+           
         </form>
     </div>
 </body>
