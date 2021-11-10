@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: auto;
+    background-color: rgb(224, 224, 235);
+}
+.logo{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 130px;
+    font-family:monospace;
+    color: rgb(42, 98, 172);
+    
+    
+}
+.center{
+    position:sticky;
+    text-align: center;
+    background: white;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, 0%);
+    width: 420px;
+    border-radius: 10px;
+    
+    
+}
+.center h3{
+    font-family:cursive;
+    padding-top: 10px;
+    border-bottom: 1px solid silver;
+    padding-bottom: 10px;
+
+}
+
+.pass input{
+    width: 75%;
+    height: 28px;
+    margin: 7px;
+}
+.fullname input{
+
+    width: 34%;
+    height: 28px;
+    margin: 7px;
+}
+
+#submit{
+    margin-top: 8px;
+    width: 77%;
+    height: 33px;
+    background: rgb(42, 98, 172);
+    color: white;
+    font-size: 19px;
+    font-family:monospace;
+    border-radius: 5px;
+
+}
+.forgot{
+    margin-top: 6px;
+}
+.forgot a{
+    text-decoration: none;
+   color: black;
+   margin: 5px;
+}
+.login{
+    margin-top: 8px;
+}
+.login a{
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(37, 88, 155);
+    font-style: inherit;
+
+}
+#submit:hover{
+    font-size: 21px;
+}
+.space p{
+    color:white;
+    margin-top: 1px;
+    text-align: end;
+}
+
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <h1>Blog-Mantra</h1>
+    </div>
+    <div class="center">
+        <div id="singupname">
+            <h3>Sign Up in Blog-Mantra</h3>
+        </div>
+        <form action="#" method="post">
+            <div class="fullname">
+                <input type="text" value="" placeholder="First Name">
+                <input type="text" value="" placeholder="Last Name">
+            </div>
+            <div class="pass">
+                <input type="text" value="" placeholder="Email address or Phone number">   
+            </div>
+            <div class="pass">
+                <input type="password" value="" placeholder="Password">
+            </div>
+            <input type="submit" value="Sign Up" id="submit">
+
+            <div class="login">
+                Member of Blog-Mantra? <a href="login.html">Log In</a>
+            </div>
+            <div class="space">
+                <p>R</p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
