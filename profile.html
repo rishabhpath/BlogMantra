@@ -1,70 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Profile | Blog-Mantra</title>
-</head>
-    <style type="text/css">
-        #blue_bar
+    <title>Blog-Mantra | Sign-up</title>
+    <style>
+
+        #top
         {
-            height: 50px;
-            background-color: #3c5a99; 
-            color: #d9dfeb;
+        height:100px ;
+        background-color: #3c5a99; 
+        color: #d9dfeb; 
+        padding-left: 4px;
         }
-        #search_box
+        
+        #signup
         {
-            width: 400px;
-            height: 20px;
-            border-radius: 4px;
-            border: none;
+            width: 70px;
+            text-align: center;
             padding: 4px;
-            font-size: 13px;
-            background-image: url(./assets/search.png);
-            background-repeat: no-repeat;
-            background-position: right;
+            background-color: #42b72a;
+            border-radius: 5px;
+            float: right;
+           
         }
-        #cover_area
-        {
-            width: 800px;
-            margin: auto;
-            background-color: black;
-            min-height: 400px;     
-            /* min height to save content overflow */
-        }
-        #profile_pic
-        {
-            width: 150px;
-            margin-top: -200px;
-            border-radius: 100px;
-            border: solid 2px white;
-        }
-    </style>
-<body style="font-family: Tahoma, Geneva, Verdana, sans-serif; background-color: #d0d8e4;">
+
+    .logo{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 130px;
+    font-family:monospace;
+    color: rgb(42, 98, 172);   
+    }
     
-    <!-- top bar -->
-   
-    <div id="blue_bar">
-        <div style="width: 800px;margin:auto; font-size:30px;">
-            Blog-Mantra &nbsp; &nbsp; 
-            <input type="text" id="search_box" placeholder="Search for Writers">
-            
-            <img src="./assets/kaushik.jpg" style="width: 50px;float: right; border-radius: 50px;">
-        </div>
+.center{
+    position:sticky;
+    text-align: center;
+    background: white;
+    margin: auto;
+    margin-top: 50px;
+    width: 420px;
+    border-radius: 10px;
+    
+    
+}
+.center h3{
+    /* font-family:cursive; */
+    padding-top: 10px;
+    font-size: 20PX;
+    border-bottom: 1px solid silver;
+    padding-bottom: 10px;
+
+}
+
+.pass input{
+    width: 75%;
+    height: 28px;
+    margin: 7px;
+}
+.fullname input{
+
+    width: 34%;
+    height: 28px;
+    margin: 7px;
+}
+
+#submit{
+    margin-top: 8px;
+    width: 77%;
+    height: 33px;
+    background: rgb(42, 98, 172);
+    color: white;
+    /* font-size: 19px;
+    font-family:monospace; */
+    border-radius: 5px;
+    border: none;
+
+}
+.forgot{
+    margin-top: 6px;
+}
+.forgot a{
+    text-decoration: none;
+   color: black;
+   margin: 5px;
+}
+.login{
+    margin-top: 8px;
+}
+.login a{
+    text-decoration: none;
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    color: rgb(37, 88, 155);
+    font-style: inherit;
+
+}
+#submit:hover{
+    font-size: 21px;
+}
+.space p{
+    color:white;
+    margin-top: 1px;
+    text-align: end;
+}
+.textbox
+{
+    border-radius: 4px;
+            margin-bottom: 12px;
+            border: solid 1px #ccc;
+
+}
+.gender
+{
+    height: 30px;
+    width: 300px;
+}
+    </style>
+</head>
+
+
+
+<body style="background-color: #e9ebee;">
+    <div id="top">
+        <div  style="font-size: 40px;">Blog-Mantra</div>
+        <div  id="signup">Log-In</div>
     </div>
 
-    <!-- cover page -->
 
-    <div id="cover_area" >
-
-        <div style="background-color: white; text-align: center;color: #405d9b;">
-            <img src="./assets/mountain.jpg" style="width: 100%;">
-            <img src="./assets/kaushik.jpg" id="profile_pic">
-            <br>
-            
-            <br>
-            Timeline  About   Friends   Photos  Settings
+    <!-- Sign-up form -->
+    <div class="center">
+        <div id="singupname">
+            <h3>Sign Up With Blog-Mantra</h3>
         </div>
+        <form action="#" method="post">
+            <div class="fullname">
+                <input class="textbox" type="text" value="" placeholder="First Name">
+                <input class="textbox" type="text" value="" placeholder="Last Name">
+            </div>
+            <div class="pass">
+                <input class="textbox" type="text" value="" placeholder="Email address or Phone number">   
+            </div>
+            <div class="pass">
+                <input class="textbox" type="password" value="" placeholder="Password">
+            </div>
+            <div class="pass">
+                <input class="textbox" type="password" value="" placeholder="Retype Password">
+            </div>
+            <input type="submit" value="Sign Up" id="submit">
 
+            <div class="login">
+                Member of Blog-Mantra? <a href="login.html">Log In</a>
+            </div>
+            <div class="space">
+                <p>R</p>
+            </div>
+        </form>
     </div>
-
 </body>
 </html>
