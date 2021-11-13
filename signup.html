@@ -23,14 +23,7 @@
            
         }
 
-    .logo{
-    text-align: center;
-    font-size: 20px;
-    margin-top: 130px;
-    font-family:monospace;
-    color: rgb(42, 98, 172);   
-    }
-    
+   
 .center{
     position:sticky;
     text-align: center;
@@ -39,29 +32,11 @@
     margin-top: 50px;
     width: 420px;
     border-radius: 10px;
+    padding: 15px;
     
     
 }
-.center h3{
-    /* font-family:cursive; */
-    padding-top: 10px;
-    font-size: 20PX;
-    border-bottom: 1px solid silver;
-    padding-bottom: 10px;
 
-}
-
-.pass input{
-    width: 75%;
-    height: 28px;
-    margin: 7px;
-}
-.fullname input{
-
-    width: 34%;
-    height: 28px;
-    margin: 7px;
-}
 
 #submit{
     margin-top: 8px;
@@ -69,49 +44,35 @@
     height: 33px;
     background: rgb(42, 98, 172);
     color: white;
-    /* font-size: 19px;
-    font-family:monospace; */
     border-radius: 5px;
     border: none;
 
 }
-.forgot{
-    margin-top: 6px;
-}
-.forgot a{
-    text-decoration: none;
-   color: black;
-   margin: 5px;
-}
-.login{
-    margin-top: 8px;
-}
-.login a{
-    text-decoration: none;
-    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
-    color: rgb(37, 88, 155);
-    font-style: inherit;
 
-}
-#submit:hover{
-    font-size: 21px;
-}
-.space p{
-    color:white;
-    margin-top: 1px;
-    text-align: end;
-}
+
 .textbox
 {
     border-radius: 4px;
             margin-bottom: 12px;
             border: solid 1px #ccc;
-
-}
-.gender
-{
+    width: 260px;
     height: 30px;
-    width: 300px;
+}
+.textbox3
+{
+    border-radius: 4px;
+    margin-bottom: 12px;
+     border: solid 1px #ccc;
+    width: 310px;
+    height: 30px;
+}
+.textbox1
+{
+    border-radius: 4px;
+            margin-bottom: 12px;
+            border: solid 1px #ccc;
+    width: 150px;
+    height: 30px;
 }
     </style>
 </head>
@@ -132,35 +93,29 @@
         </div>
         <form action="#" method="post">
             <div class="fullname">
-                <input class="textbox" type="text" value="" placeholder="First Name">
-                <input class="textbox" type="text" value="" placeholder="Last Name">
-            </div>
-            <div class="pass">
-                <input class="textbox" type="text" value="" placeholder="Email address or Phone number">   
-            </div>
-             <div class="gender">
+                <input class="textbox1" type="text" value="" placeholder="First Name"> 
+                <input class="textbox1" type="text" value="" placeholder="Last Name"> <br>
+           
 
-                Gender: <select >
+                Gender: <select class="textbox">
                     <option value="male">Male</option>
                     <option value="female">Female</option>
-                </select>
+                </select> <br>
                 
-            </div>
-
-            <div class="pass">
-                <input class="textbox" type="password" value="" placeholder="Password">
-            </div>
-            <div class="pass">
-                <input class="textbox" type="password" value="" placeholder="Retype Password">
-            </div>
+            
+            
+                <input class="textbox3" type="email" value="" placeholder="Email address or Phone number">   <br>
+            
+           
+                <input class="textbox3" type="password" value="" placeholder="Password"> <br>
+            
+            
+                <input class="textbox3" type="password" value="" placeholder="Retype Password"> <br>
+            
             <input type="submit" value="Sign Up" id="submit">
 
-            <div class="login">
-                Member of Blog-Mantra? <a href="login.html">Log In</a>
-            </div>
-            <div class="space">
-                <p>R</p>
-            </div>
+            
+         
         </form>
     </div>
 </body>
