@@ -1,17 +1,65 @@
 <?php
 
-    // credentials
+class database
+{
+    private $db = "blogmantra";
+    private $username = "root";
+    private $password = "";
+    private $host = "localhost";
 
-$db = "blogmantra";
-$username = "root";
-$password = "";
-$host = "localhost";
 
-$connection = mysqli_connect($host,$username,$password,$db);
+    function connect()
+    {
+        $connection = mysqli_connect($this->host,$this->username,$this->password,$this->db);
+        
+        return $connection;
+    }
 
-$fname = "kaushik";
-$lname = "giri1";
-$query = "insert into users (fname,lname) values ('$fname','$lname')";
+    function read($query)
+    {
+        $con = $this->connect();
 
-mysqli_query($connection,$query);
+        $result = mysqli_query($con,$query);
+
+        if(!$result)
+        {
+            echo "!!! CONNECTION FAILED IN function read()";
+            return false;
+        }
+
+        else
+        {
+            $data = false;
+            while($row = mysqli_fetch_assoc($result))
+            {
+               $data[] = $row;
+            }
+            return $data; 
+        }
+
+    }
+
+    function save($query)
+    {
+        $con = $this->connect();
+
+        $result = mysqli_query($con,$query);
+
+        if(!$result)
+        {
+            echo "!!! CONNECTION FAILED IN function save()";
+            return false;
+        }
+
+        else
+        {
+            return true; 
+        }
+
+
+    }
+}
+
+$DB = new database();
+
 ?>
