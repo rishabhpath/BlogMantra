@@ -1,3 +1,14 @@
+<?php
+
+    
+    if ($_SERVER['REQUEST_METHOD']=='POST')
+    {
+        echo "<pre>";
+        print_r($_POST);
+        echo "</pre>";
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,13 +31,13 @@
         <div id="singupname">
             <h3>Sign Up With Blog-Mantra</h3>
         </div>
-        <form action="#" method="post">
+        <form action="signup.php" method="post">
             <div class="fullname">
-                <input class="textbox1" type="text" value="" placeholder="First Name"> 
-                <input class="textbox1" type="text" value="" placeholder="Last Name"> <br>
+                <input name="fname" class="textbox1" type="text" value="" placeholder="First Name"> 
+                <input name="lname" class="textbox1" type="text" value="" placeholder="Last Name"> <br>
            
 
-                Gender: <select class="textbox">
+                Gender: <select class="textbox" name="gender">
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                     <option value="other">Other</option>
@@ -34,13 +45,13 @@
                 
             
             
-                <input class="textbox3" type="email" value="" placeholder="Email address or Phone number">   <br>
+                <input name="email" class="textbox3" type="email" value="" placeholder="Email address or Phone number">   <br>
             
            
-                <input class="textbox3" type="password" value="" placeholder="Password"> <br>
+                <input name="password" class="textbox3" type="password" value="" placeholder="Password"> <br>
             
             
-                <input class="textbox3" type="password" value="" placeholder="Retype Password"> <br>
+                <input name="password2" class="textbox3" type="password" value="" placeholder="Retype Password"> <br>
             
             <input type="submit" value="Sign Up" id="submit">
 

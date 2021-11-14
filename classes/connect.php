@@ -23,7 +23,7 @@ class database
 
         if(!$result)
         {
-            echo "!!! CONNECTION FAILED IN function read()";
+            echo "!!! DATABASE FAILED IN function read()";
             return false;
         }
 
@@ -47,7 +47,7 @@ class database
 
         if(!$result)
         {
-            echo "!!! CONNECTION FAILED IN function save()";
+            echo "!!! DATABASE FAILED IN function save()";
             return false;
         }
 
@@ -59,7 +59,5 @@ class database
 
     }
 }
-
-$DB = new database();
 
 ?>
