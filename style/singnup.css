@@ -1,0 +1,70 @@
+#top
+{
+height:100px ;
+background-color: #3c5a99; 
+color: #d9dfeb; 
+padding-left: 4px;
+}
+
+#signup
+{
+    width: 70px;
+    text-align: center;
+    padding: 4px;
+    background-color: #42b72a;
+    border-radius: 5px;
+    float: right;
+   
+}
+
+
+.center{
+position:sticky;
+text-align: center;
+background: white;
+margin: auto;
+margin-top: 50px;
+width: 420px;
+border-radius: 10px;
+padding: 15px;
+
+
+}
+
+
+#submit{
+margin-top: 8px;
+width: 77%;
+height: 33px;
+background: rgb(42, 98, 172);
+color: white;
+border-radius: 5px;
+border: none;
+
+}
+
+
+.textbox
+{
+border-radius: 4px;
+    margin-bottom: 12px;
+    border: solid 1px #ccc;
+width: 260px;
+height: 30px;
+}
+.textbox3
+{
+border-radius: 4px;
+margin-bottom: 12px;
+border: solid 1px #ccc;
+width: 310px;
+height: 30px;
+}
+.textbox1
+{
+border-radius: 4px;
+    margin-bottom: 12px;
+    border: solid 1px #ccc;
+width: 150px;
+height: 30px;
+}
